@@ -6,3 +6,10 @@
 - Homework 3
 - Project 1
 - Project 2
+
+## CS 224: Computer Organization
+- Lab 1
+- Lab 2
+- Lab 3
+- Lab 4
+- Lab 6
