@@ -5,13 +5,6 @@
 *.o
 *.so
 
-
-.DS_Store
-.DS_Store?
-._*
-.vscode
-
-
 *.7z
 *.dmg
 *.gz
@@ -20,3 +13,13 @@
 *.rar
 *.tar
 *.zip
+
+*.vscode
+
+*.log
+*.sql
+*.sqlite
+
+.DS_Store
+.DS_Store?
+._*
