@@ -5,9 +5,12 @@
 *.o
 *.so
 
+
 .DS_Store
 .DS_Store?
 ._*
+.vscode
+
 
 *.7z
 *.dmg
