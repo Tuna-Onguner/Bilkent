@@ -1,5 +1,16 @@
-### Part 1, convertHexToDec:
+#
+# Bilkent University
+# Fall 2022-2023
+#
+# CS 224: Computer Organization
+# Lab 2
+#
+# Deniz Tuna Onguner
+# Bilkent ID: 22001788
+#
 
+
+### Part 1, convertHexToDec:
 
 # Lab 02
 # MIPS Assembly Language Programming Using Subprograms
@@ -160,7 +171,6 @@ newLine:
 
 
 ### Part 2, invertBytes:
-
 
 # Lab 02
 # MIPS Assembly Language Programming Using Subprograms

@@ -1,3 +1,15 @@
+#
+# Bilkent University
+# Fall 2022-2023
+#
+# CS 224: Computer Organization
+# Lab 1
+#
+# Deniz Tuna Onguner
+# Bilkent ID: 22001788
+#
+
+
 ##
 ## Program1.asm - prints out "hello world"
 ##
