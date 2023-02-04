@@ -19,3 +19,9 @@
 - Lab 3
 - Lab 4
 - Lab 5
+
+## CS 201: Fundamental Structures of Computer Science I
+- Homework 1
+- Homework 2
+- Homework 3
+- Homework 4
