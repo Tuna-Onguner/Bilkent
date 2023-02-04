@@ -13,3 +13,9 @@
 - Lab 3
 - Lab 4
 - Lab 6
+
+## CS 223: Digital Design
+- Lab 2
+- Lab 3
+- Lab 4
+- Lab 5
