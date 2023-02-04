@@ -12,7 +12,6 @@
 
 module Main(input logic CLK, RESET, Load, Shift, [7:0] A, B,
            output logic [7:0] sum);
-
     logic slowedClock;
     Clock clock(CLK, slowedClock);
     SerialAdder SA(slowedClock, RESET, Load, Shift, A, B, sum);
