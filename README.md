@@ -9,7 +9,15 @@
 
 ## CS 224: Computer Organization
 - Lab 1
+  - Preliminary
+  - Lab
 - Lab 2
+  - Preliminary
+  - Lab
 - Lab 3
+  - Preliminary
+  - Lab
 - Lab 4
+  - Lab
 - Lab 6
+  - Preliminary
