@@ -29,3 +29,4 @@
 ## CS 202: Fundamental Structures of Computer Science II
 - Homework 1
 - Homework 2
+- Homework 3
