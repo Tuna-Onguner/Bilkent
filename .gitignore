@@ -15,6 +15,7 @@
 *.zip
 
 *.vscode
+*.idea
 
 *.log
 *.sql
