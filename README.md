@@ -30,3 +30,9 @@
 - Homework 1
 - Homework 2
 - Homework 3
+
+## CS 115: Introduction to Programming in Python
+- Lab 2
+- Lab 3
+- Lab 4
+- Lab 5
