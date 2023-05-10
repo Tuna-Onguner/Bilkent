@@ -1,4 +1,5 @@
-# Bilkent Computer Engineering 
+# Bilkent University
+# Department of Computer Engineering 
 
 ## CS 315: Programming Languages
 - Homework 1
@@ -36,3 +37,4 @@
 - Lab 3
 - Lab 4
 - Lab 5
+- Lab 6
