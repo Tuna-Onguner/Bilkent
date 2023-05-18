@@ -1,4 +1,4 @@
-# Bilkent University Department of Computer Engineering 
+# Bilkent University <br/>Department of Computer Engineering 
 
 ## CS 315: Programming Languages
 Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
