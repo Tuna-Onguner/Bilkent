@@ -45,6 +45,6 @@ Required Language: Python
 - Lab 6
 
 ## CS 319: Object-Oriented Software Engineering
-Required Language: Java
+Required Language: Java <br/>
 Recommended Languages: HTML, CSS, JavaScript
 - Take Home Assignment
