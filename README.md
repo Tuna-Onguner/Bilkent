@@ -55,4 +55,4 @@ Required Language: Java<br/>
 Recommended: HTML, CSS/Bootstrap, JavaScript, Node.js or Django
 
 - Take-home Assignment
-- Term Project is [here](https://github.com/Tuna-Onguner/InternHub)
+- Term Project (available [here](https://github.com/Tuna-Onguner/InternHub))
