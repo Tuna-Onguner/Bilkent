@@ -47,5 +47,6 @@ Required Language: Python
 ## CS 319: Object-Oriented Software Engineering
 Required Language: Java<br/>
 Recommended: HTML, CSS/Bootstrap, JavaScript, Node.js or Django
+<span style="color: blue;">This text is blue.</span>
 - Take-home Assignment
 - Term Project [Available at https://github.com/Tuna-Onguner/InternHub]
