@@ -1,4 +1,4 @@
-# Bilkent University <br/>Department of Computer Engineering 
+# Bilkent University<br/>Department of Computer Engineering 
 
 ## CS 315: Programming Languages
 Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
@@ -46,5 +46,4 @@ Required Language: Python
 
 ## CS 319: Object-Oriented Software Engineering
 Required Language: Java <br/>
-Recommended Languages: HTML, CSS, JavaScript
-- Take Home Assignment
+- Take-home Assignment
