@@ -2,6 +2,7 @@
 
 ## CS 315: Programming Languages
 Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP (All, except for Python and JS, may change from one semester to another.)
+
 - Homework 1
 - Homework 2
 - Homework 3
@@ -10,6 +11,7 @@ Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP (All, except 
 
 ## CS 224: Computer Organization
 Required Languages: SystemVerilog & MARS Assembly
+
 - Lab 1
 - Lab 2
 - Lab 3
@@ -18,6 +20,7 @@ Required Languages: SystemVerilog & MARS Assembly
 
 ## CS 223: Digital Design
 Required Language: SystemVerilog
+
 - Lab 2
 - Lab 3
 - Lab 4
@@ -25,6 +28,7 @@ Required Language: SystemVerilog
 
 ## CS 201: Fundamental Structures of Computer Science I
 Required Language: C++
+
 - Homework 1
 - Homework 2
 - Homework 3
@@ -32,12 +36,14 @@ Required Language: C++
 
 ## CS 202: Fundamental Structures of Computer Science II
 Required Language: C++
+
 - Homework 1
 - Homework 2
 - Homework 3
 
 ## CS 115: Introduction to Programming in Python
 Required Language: Python
+
 - Lab 2
 - Lab 3
 - Lab 4
@@ -47,6 +53,6 @@ Required Language: Python
 ## CS 319: Object-Oriented Software Engineering
 Required Language: Java<br/>
 Recommended: HTML, CSS/Bootstrap, JavaScript, Node.js or Django
-<span style="color: blue;">This text is blue.</span>
+
 - Take-home Assignment
-- Term Project [Available at https://github.com/Tuna-Onguner/InternHub]
+- Term Project [Available here](https://github.com/Tuna-Onguner/InternHub)
