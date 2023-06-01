@@ -1,0 +1,21 @@
+Ali Eren;Ozer;1500.00;14A
+Ahmet;Yuksel;500.00;15C
+Ebru;Kose Tas;1100.00;9B
+Murat;Yalcin;3100.00;04C
+Aysel;Keskin;2280.80;20F
+Zehra;Aksoy;1500.00;18D
+Fadime;Turan;1500.75;11A
+Umran;Sen;870.25;A02
+Ruya;Yilmaz;11400.00;08D
+Omer;Ates;4600.00;21F
+Aysel;Keskin;2280.80;20F
+Oguzhan;Tas;790;-
+Sultan;Aktas;3200.00;-
+Yasar;Yildiz;8100.00;01C
+Meryem Alya;Demir;2500.00;15D  
+Şahnur;Ozdemir;350.00;22B
+Aleyna;Ozturk;1950.00;215
+Betul;Cakir;4150.00;21C
+Melek;Polat;1800.00;07C
+Fadime;Gunes;1850.25;16F
+Furkan;Yuksel;2670.50;02D

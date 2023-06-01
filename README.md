@@ -49,6 +49,8 @@ Required Language: Python
 - Lab 4
 - Lab 5
 - Lab 6
+- Lab 7
+- Lab 8
 
 ## CS 319: Object-Oriented Software Engineering
 Required Language: Java<br/>
