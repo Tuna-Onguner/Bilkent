@@ -34,8 +34,8 @@ Required Language: C++
 - Homework 3
 - Homework 4
 
-## ~~CS 202: Fundamental Structures of Computer Science II
-Required Language: C++~~
+## ~~CS 202: Fundamental Structures of Computer Science II~~
+~~Required Language: C++~~
 
 ~~- Homework 1~~
 ~~- Homework 2~~
