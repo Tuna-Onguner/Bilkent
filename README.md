@@ -37,9 +37,9 @@ Required Language: C++
 ## ~~CS 202: Fundamental Structures of Computer Science II~~
 ~~Required Language: C++~~
 
-~~- Homework 1~~
-~~- Homework 2~~
-~~- Homework 3~~
+- ~~Homework 1~~
+- ~~Homework 2~~
+- ~~Homework 3~~
 
 ## CS 115: Introduction to Programming in Python
 Required Language: Python
