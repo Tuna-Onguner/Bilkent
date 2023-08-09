@@ -27,13 +27,15 @@ Required Language: SystemVerilog
 - Lab 4
 - Lab 5
 
+Note that Lab 1 is not shared since it does not include any programming.
+
 ## CS 202: Fundamental Structures of Computer Science II
 Required Language: C++
 
 - Homework 1
 - Homework 2
 - Homework 3
-- Homework 4 (will be uploaded)
+- Homework 4
 
 ## CS 224: Computer Organization
 Required Languages: SystemVerilog & MARS Assembly
@@ -43,6 +45,8 @@ Required Languages: SystemVerilog & MARS Assembly
 - Lab 3
 - Lab 4
 - Lab 6
+
+Note that Lab 5 is not shared since I did not do it.
 
 ## CS 315: Programming Languages
 Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP<br/>(All, except for Python and JS, may change from one semester to another.)
