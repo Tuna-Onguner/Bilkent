@@ -61,4 +61,4 @@ Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP<br/>(All, exc
 Required Language: Java<br/>
 
 - Take-home Assignment
-- Term Project (available [here](https://github.com/Tuna-Onguner/InternHub))
+- Term Project ([available here](https://github.com/Tuna-Onguner/InternHub))
