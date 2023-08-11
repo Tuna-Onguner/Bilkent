@@ -36,9 +36,9 @@ endmodule
 module pulse_controller (input      CLK, sw_input, clear,
 	                 output reg clk_pulse);
 
-	 reg [ 2:0] state, nextstate;
-	 reg [27:0] CNT; 
-	 wire       cnt_zero; 
+	reg [ 2:0] state, nextstate;
+	reg [27:0] CNT; 
+	wire       cnt_zero; 
 
 	always @(posedge CLK, posedge clear)
 	   if(clear)
@@ -46,7 +46,7 @@ module pulse_controller (input      CLK, sw_input, clear,
 	   else
 	    	state <= nextstate;
 
-	always @ (sw_input, state, cnt_zero)
+	always @(sw_input, state, cnt_zero)
           case (state)
              3'b000: begin if (sw_input) nextstate = 3'b001; 
                            else nextstate = 3'b000; clk_pulse = 0; end	     
@@ -158,9 +158,9 @@ endmodule
 
 
 module top (input  logic        clk, reset,      
-	        output logic [31:0] writedata, dataadr,
-	        output logic [31:0] pc, instr, readdata,
-	        output logic        memwrite);
+	    output logic [31:0] writedata, dataadr,
+	    output logic [31:0] pc, instr, readdata,
+	    output logic        memwrite);
 
    // instantiate processor and memories  
    mips mips (clk, reset, pc, instr, memwrite, 
@@ -273,9 +273,9 @@ endmodule
 
 
 module maindec (input  logic [5:0] op, 
-	            output logic       memtoreg, memwrite, branch,
-	            output logic       alusrc, regdst, regwrite, jump, jm,
-	            output logic [1:0] aluop);
+	        output logic       memtoreg, memwrite, branch,
+	        output logic       alusrc, regdst, regwrite, jump, jm,
+	        output logic [1:0] aluop);
 	            
    logic [9:0] controls;
 
