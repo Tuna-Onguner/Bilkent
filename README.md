@@ -49,13 +49,15 @@ Required Languages: SystemVerilog & MARS Assembly
 Note that Lab 5 is not shared since I did not do it.
 
 ## CS 315: Programming Languages
-Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP<br/>(All, except for Python and JS, may change from one semester to another.)
+Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
 
 - Project 1
 - Project 2
 - Homework 1
 - Homework 2
 - Homework 3
+
+Note that the languages above may change from one semester to another.
 
 ## CS 319: Object-Oriented Software Engineering
 Required Language: Java<br/>
