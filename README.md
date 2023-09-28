@@ -1,5 +1,19 @@
 # Bilkent University<br/>Department of Computer Engineering 
 
+Sadly, I have no longer access to my CS 101 works.
+
+## CS 102: Algorithms and Programming II
+Required Language: Java
+
+- Homework 1
+- Homework 2
+- Lab 1
+- Lab 2
+- Lab 3
+- Lab 4
+- Lab 5
+- Lab 6
+
 ## CS 115: Introduction to Programming in Python
 Required Language: Python
 
