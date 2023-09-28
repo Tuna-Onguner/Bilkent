@@ -22,12 +22,13 @@ Required Language: C++
 ## CS 223: Digital Design
 Required Language: SystemVerilog
 
+- Lab 1
 - Lab 2
 - Lab 3
 - Lab 4
 - Lab 5
 
-Note that Lab 1 is not shared since it does not include any programming.
+Note that there is no code provided for Lab 1 since it does not (or, at least, did not) include any programming.
 
 ## CS 202: Fundamental Structures of Computer Science II
 Required Language: C++
@@ -64,3 +65,8 @@ Required Language: Java<br/>
 
 - Take-home Assignment
 - [Term Project](https://github.com/Tuna-Onguner/InternHub)
+
+## CS 342: Operating Systems
+Required Language: C<br/>
+
+- Homework 1
