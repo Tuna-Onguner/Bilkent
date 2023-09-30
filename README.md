@@ -5,8 +5,8 @@ Sadly, I have no longer access to my CS 101 works.
 ## CS 102: Algorithms and Programming II
 Required Language: Java
 
-- Homework 1
 - Homework 2
+- Homework 3
 - Lab 1
 - Lab 2
 - Lab 3
