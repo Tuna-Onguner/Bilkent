@@ -231,7 +231,7 @@ int main(int argc, char **argv) {
         }
 
         mq_getattr(mq, &mqAttributes); // Check if there are no more messages to be received
-        for (int k = mqAttributes.mq_curmsgs; k > 0; k++) {
+        for (int k = mqAttributes.mq_curmsgs; k > 0; k = k - 1) {
             char charMessage[MSG_SIZE]; // Create a char array for the message
             const ssize_t RECEIVED = mq_receive(mq, charMessage, DEFAULT_MAX_MSG_SIZE, 0); // Receive a message
 
