@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block style %}
+<style>
+    .btn-register {
+        margin-top: 2vh;
+        width: 100%;
+        background: #BB2233;
+        border: none;
+    }
+    
+    .btn-register:hover {
+        background: #0A0F24;
+    }
+    
+    .btn-register:active {
+        background: #0A0F24;
+    }
+
+    .alert-message {
+        color: #FF0000;
+        font-weight: bold;
+    }
+    
+    .btn-return {
+        color: #0A0F24;
+        background: none;
+        border: none;
+        margin: 7px;
+    }
+    
+    .card {
+        width: 55vh;
+        border: 2px solid #0A0F24;
+        background-color: #FAE3CF;
+        overflow: auto;
+    }
+    
+    .card-body {
+        background-color: #FAE3CF;
+    }
+    
+    .card-title {
+        color: #0A0F24;
+        margin-bottom: 2vh;
+    }
+    
+    .action-form {
+        margin: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">Registration</h2>
+                <form class="action-form" action="{{ url_for('register') }}" method="post">
+                    {% if message %}
+                        <div class="alert alert-warning alert-message">{{ message }}</div>
+                    {% endif %}
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter a username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Student ID:</label>
+                        <input type="text" class="form-control" id="id" name="id" placeholder="Enter your student ID" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="birthdate" class="form-label">Date of Birth:</label>
+                        <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Department:</label>
+                        <select class="form-select" id="department" name="department" required>
+                            <option value="" selected disabled>Select your department</option>
+                            <option value="CS">Computer Engineering</option>
+                            <option value="EE">Electrics and Electronics Engineering</option>
+                            <option value="IE">Industrial Engineering</option>
+                            <option value="ME">Mechanical Engineering</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="year" class="form-label">Year:</label>
+                        <select class="form-select" id="year" name="year" required>
+                            <option value="" selected disabled>Select your year</option>
+                            <option value="freshman">Freshman</option>
+                            <option value="sophomore">Sophomore</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gpa" class="form-label">GPA:</label>
+                        <input type="text" class="form-control" id="gpa" name="gpa" placeholder="Enter your GPA" required min="0" max="4" step="0.01">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg btn-register">Register</button>
+                    </div>
+                </form>
+                <form action="{{ url_for('login') }}" method="get" class="text-center mt-3">
+                    <button class="btn-return">Already have an account?</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<script>
+    document.getElementById("birthdate").addEventListener("change", function() {
+        const dateInput = this.value; // Get the date value in the format YYYY-MM-DD
+        const formattedDate = new Date(dateInput).toISOString().split('T')[0];
+        this.value = formattedDate;
+    });
+</script>

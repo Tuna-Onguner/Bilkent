@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}Apply{% endblock %}
+
+{% block style %}
+<style>
+    .mt-4 {
+        color: #0A0F24;
+    }
+    
+    h3 {
+        color: #0A0F24;
+    }
+    
+    .card {
+        background: #FDF4EC;
+        border: 2px solid #0A0F24;
+    }
+    
+    .table {
+        width: 100%;
+        border: 2px solid #0A0F24;
+        background: #FAE3CF;
+        margin-top: 2vh;
+    }
+    
+    .table th {
+        background: #FAE3CF;
+    }
+    
+    .table td {
+        background: #FDF4EC;
+    }
+    
+    .right-aligned {
+        text-align: right;
+    }
+    
+    .btn {
+        border: none;
+        width: 23vh;
+        background: #BB2233;
+    }
+    
+    .btn:hover {
+        background: #0A0F24;
+    }
+    
+    .btn:active {
+        background: #0A0F24;
+    }
+    
+    .input-field {
+        width: 19%;
+    }
+    
+    .back-button {
+        margin: 2vh;
+        width: 8%;
+    }
+</style>
+{% endblock %}
+
+{% block back %}
+    <div>
+        <a href="{{ url_for('main') }}" class="back-button btn btn-primary">Back</a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1 class="mt-4">Summary Page</h1>
+    <div class="row">
+        <div class="col">
+            <h3 class="mt-2">Companies Applied</h3>
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th class="right-aligned">Quota</th>
+                        <th class="right-aligned">GPA Threshold</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if company_list %}
+                        {% for company in company_list %}
+                            <tr>
+                                <td>{{ company.cname }}</td>
+                                <td class="right-aligned">{{ company.quota }}</td>
+                                <td class="right-aligned">{{ company.gpa_threshold }}</td>
+                                <td></td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center">No applications yet</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col">
+                    <h3 class="mt-2">Max and Min GPA Threshold</h3>
+                        <table class="table mt-4">
+                            <thead>
+                                <tr>
+                                    <th>Max GPA Threshold</th>
+                                    <th>Min GPA Threshold</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ max_gpat }}</td>
+                                    <td>{{ min_gpat }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <h3 class="mt-2">Max and Min GPA Quotas</h3>
+                        <table class="table mt-4">
+                            <thead>
+                                <tr>
+                                    <th>Max Quota</th>
+                                    <th>Min Quota</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ max_gpat }}</td>
+                                    <td>{{ min_gpat }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <h3 class="mt-2">Applications by City</h3>
+            <table class="table tx mt-4">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th class="right-aligned">Application Count</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if cities_and_app_counts %}
+                        {% for city_and_app_count in cities_and_app_counts %}
+                            <tr>
+                                <td>{{ city_and_app_count.city }}</td>
+                                <td class="right-aligned">{{ city_and_app_count.application_count }}</td>
+                                <td></td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center">No applications yet</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

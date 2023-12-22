@@ -78,9 +78,27 @@ Note that the languages above may change from one semester to another.
 Required Language: Java<br/>
 
 - Take-home Assignment
-- [Term Project](https://github.com/Tuna-Onguner/InternHub)
+- [Course Project](https://github.com/Tuna-Onguner/InternHub)
 
 ## CS 342: Operating Systems
 Required Language: C<br/>
 
 - Homework 1
+- Homework 2
+- Project 1
+- Project 2
+- Project 3
+- Project 4
+
+Note that the project #2 is partially completed.
+
+## CS 353: Database Systems
+Required Language: SQL<br/>
+
+- Homework 1
+- Homework 2
+- Homework 3
+- Homework 4
+- [Course Project]()
+
+Note that I did not do the last two homework (#5 and #6).

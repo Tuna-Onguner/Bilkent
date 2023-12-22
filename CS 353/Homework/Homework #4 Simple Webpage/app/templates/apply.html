@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block title %}Apply{% endblock %}
+
+{% block style %}
+<style>
+    .mt-4 {
+        color: #0A0F24;
+    }
+    
+    .card {
+        background: #FDF4EC;
+        border: 2px solid #0A0F24;
+    }
+    
+    .table {
+        width: 100%;
+        border: 2px solid #0A0F24;
+        background: #FAE3CF;
+        margin-top: 2vh;
+    }
+    
+    .table th {
+        background: #FAE3CF;
+    }
+    
+    .table td {
+        background: #FDF4EC;
+    }
+    
+    .right-aligned {
+        text-align: right;
+    }
+    
+    .btn {
+        border: none;
+        width: 23vh;
+        background: #BB2233;
+    }
+    
+    .btn:hover {
+        background: #0A0F24;
+    }
+    
+    .btn:active {
+        background: #0A0F24;
+    }
+    
+    .input-field {
+        width: 19%;
+    }
+    
+    .back-button {
+        margin: 2vh;
+        width: 8%;
+    }
+</style>
+{% endblock %}
+
+{% block back %}
+    <div>
+        <a href="{{ url_for('main') }}" class="back-button btn btn-primary">Back</a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1 class="mt-4">Companies Open to Application</h1>
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>Company ID</th>
+                        <th>Company Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if company_list %}
+                        {% for company in company_list %}
+                            <tr>
+                                <td>{{ company.cid }}</td>
+                                <td>{{ company.cname }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center">No eligable companies available</td>
+                        </tr>
+                    {% endif %}
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <form action="{{ url_for('apply') }}" method="post">
+                                <p class="mt-3">Enter the ID of the company you want to apply to</p>
+                                <div class="text-center form-group d-flex justify-content-center mt-1">
+                                    <input type="text" class="input-field form-control" id="cid" name="cid" placeholder="Enter company ID" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-4 mt-2">Apply</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

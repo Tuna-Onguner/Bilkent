@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block style %}
+<style>
+    .btn-login {
+        margin-top: 2vh;
+        width: 100%;
+        background: #BB2233;
+        border: none;
+    }
+    
+    .alert-message {
+        color: #FF0000;
+        font-weight: bold;
+    }
+    
+    .btn-login:hover {
+        background: #0A0F24;
+    }
+    
+    .btn-login:active {
+        background: #0A0F24;
+    }
+
+    .btn-register {
+        color: #0A0F24;
+        background: none;
+        border: none;
+        margin: 7px;
+    }
+
+    .card {
+        width: 50vh;
+        border: 2px solid #0A0F24;
+        background-color: #FAE3CF;
+        overflow: auto;
+    }
+
+    .card-body {
+        background-color: #FAE3CF;
+    }
+
+    .card-title {
+        color: #0A0F24;
+        margin-bottom: 2vh;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">Internship System</h2>
+                <form action="{{ url_for('login') }}" method="post">
+                    {% if message is defined and message %}
+                        <div class="alert alert-warning">{{ message }}</div>
+                    {% endif %}
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg btn-login">Login</button>
+                    </div>
+                </form>
+                <form action="{{ url_for('register') }}" method="get" class="text-center mt-3">
+                    <button class="btn-register">Do not have an account?</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
