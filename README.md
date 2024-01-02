@@ -1,6 +1,8 @@
 # Bilkent University<br/>Department of Computer Engineering 
 
+
 Sadly, I have no longer access to my CS 101 works.
+
 
 ## CS 102: Algorithms and Programming II
 Required Language: Java
@@ -14,6 +16,7 @@ Required Language: Java
 - Lab 5
 - Lab 6
 
+
 ## CS 115: Introduction to Programming in Python
 Required Language: Python
 
@@ -25,6 +28,7 @@ Required Language: Python
 - Lab 7
 - Lab 8
 
+
 ## CS 201: Fundamental Structures of Computer Science I
 Required Language: C++
 
@@ -32,6 +36,7 @@ Required Language: C++
 - Homework 2
 - Homework 3
 - Homework 4
+
 
 ## CS 223: Digital Design
 Required Language: SystemVerilog
@@ -44,6 +49,7 @@ Required Language: SystemVerilog
 
 Note that there is no code provided for Lab 1 since it does not (or, at least, did not) include any programming.
 
+
 ## CS 202: Fundamental Structures of Computer Science II
 Required Language: C++
 
@@ -51,6 +57,7 @@ Required Language: C++
 - Homework 2
 - Homework 3
 - Homework 4
+
 
 ## CS 224: Computer Organization
 Required Languages: SystemVerilog & MARS Assembly
@@ -61,7 +68,8 @@ Required Languages: SystemVerilog & MARS Assembly
 - Lab 4
 - Lab 6
 
-Note that Lab 5 is not shared since I did not do it.
+Note that Lab 5 is not shared since I did not do it. It is the hardest lab and I do not recommend to rely on it for the FZ criteria.
+
 
 ## CS 315: Programming Languages
 Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
@@ -74,11 +82,13 @@ Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
 
 Note that the languages above may change from one semester to another.
 
+
 ## CS 319: Object-Oriented Software Engineering
 Required Language: Java<br/>
 
 - Take-home Assignment
 - [Course Project](https://github.com/Tuna-Onguner/InternHub)
+
 
 ## CS 342: Operating Systems
 Required Language: C<br/>
@@ -86,11 +96,11 @@ Required Language: C<br/>
 - Homework 1
 - Homework 2
 - Project 1
-- Project 2
 - Project 3
 - Project 4
 
-Note that the project #2 is partially completed.
+Note that the project #2 is not shared beacuse I was failed to do it.
+
 
 ## CS 353: Database Systems
 Required Language: SQL<br/>
