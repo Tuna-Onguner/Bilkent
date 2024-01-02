@@ -94,7 +94,6 @@ int read_block(void *block, int k) {
     off_t offset = k * BLOCKSIZE;
     lseek(vs_fd, offset, SEEK_SET);
 
-
     if (read(vs_fd, block, BLOCKSIZE) != BLOCKSIZE) {
         printf("read error\n");
         return -1;
@@ -123,6 +122,7 @@ int min(int a, int b) { // Returns the minimum of two integers. Used in vsappend
 
 int vsformat(char *vdiskname, int m) {
     const int disk_size = 1 << m; // 2^m bytes
+
     // Step 1: Check if the disk size is valid
     if (disk_size < MIN_DISK_SIZE || disk_size > MAX_DISK_SIZE) {
         printf("Invalid disk size\n\tMinimum disk size: %d bytes\n\tMaximum disk size: %d bytes\n",
@@ -363,7 +363,7 @@ int vssize(int fd) {
     }
 
     // Step 2: Get the file index from the open_files array
-    int file_index = open_files[fd - FILE_DESC_CONS].file_index;
+    const int file_index = open_files[fd - FILE_DESC_CONS].file_index;
 
     // Step 3: Access the file in the root_dir array
     struct dir_entry *file = &root_dir[file_index];
@@ -396,7 +396,7 @@ int vsread(int fd, void *buf, int n) {
     }
 
     // Step 2: Get the file index from the open_files array
-    int file_index = open_files[fd - FILE_DESC_CONS].file_index;
+    const int file_index = open_files[fd - FILE_DESC_CONS].file_index;
 
     // Step 3: Access the file in the root_dir array
     struct dir_entry *file = &root_dir[file_index];
@@ -408,14 +408,14 @@ int vsread(int fd, void *buf, int n) {
     }
 
     // Step 5: Calculate the number of bytes to read
-    int bytes_to_read = min(n, file->size);
+    const int bytes_to_read = min(n, file->size);
 
     // Step 6: Read the data from the file
     void *block = malloc(BLOCKSIZE);
     int current_block = file->first_block, bytes_read = 0;
     while (bytes_read < bytes_to_read) {
         read_block(block, current_block + super_block.data_block);
-        int bytes_to_copy = min(bytes_to_read - bytes_read, BLOCKSIZE);
+        const int bytes_to_copy = min(bytes_to_read - bytes_read, BLOCKSIZE);
         memcpy(buf + bytes_read, block, bytes_to_copy); // Copy the data to the buffer
         bytes_read += bytes_to_copy; // Update the number of bytes read
         current_block = fat[current_block].next; // Go to the next block via the FAT
@@ -435,14 +435,14 @@ int vsappend(int fd, void *buf, int n) {
     }
 
     // Step 2: Get the file index from the open_files array
-    int file_index = open_files[fd - FILE_DESC_CONS].file_index;
+    const int file_index = open_files[fd - FILE_DESC_CONS].file_index;
 
     // Step 3: Access the file in the root_dir array
     struct dir_entry *file = &root_dir[file_index];
 
     // Step 4: Check if the file is open in MODE_APPEND
     if (open_files[fd - FILE_DESC_CONS].mode != MODE_APPEND) {
-        printf("File is not open in MODE_READ\n");
+        printf("File is not open in MODE_APPEND\n");
         return -1; // File is not open in MODE_APPEND
     }
 
@@ -486,7 +486,7 @@ int vsappend(int fd, void *buf, int n) {
         }
 
         read_block(block, current_block + super_block.data_block);
-        int bytes_to_copy = min(n - bytes_written, BLOCKSIZE - block_offset); // Adjust the bytes to copy
+        const int bytes_to_copy = min(n - bytes_written, BLOCKSIZE - block_offset); // Adjust the bytes to copy
         memcpy(block + block_offset, buf + bytes_written, bytes_to_copy); // Adjust the destination pointer
         write_block(block, current_block + super_block.data_block);
         bytes_written += bytes_to_copy;
