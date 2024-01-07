@@ -1,114 +1,154 @@
-# Bilkent University<br/>Department of Computer Engineering 
-
+# Bilkent University
+Department of Computer Engineering
 
 Sadly, I have no longer access to my CS 101 works.
 
-
 ## CS 102: Algorithms and Programming II
-Required Language: Java
 
-- Homework 2
-- Homework 3
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
-- Lab 6
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Algorithms and Programming II           | Java              |
 
+| Assignment   |
+| ------------ |
+| Homework 2   |
+| Homework 3   |
+| Lab 1        |
+| Lab 2        |
+| Lab 3        |
+| Lab 4        |
+| Lab 5        |
+| Lab 6        |
 
 ## CS 115: Introduction to Programming in Python
-Required Language: Python
 
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
-- Lab 6
-- Lab 7
-- Lab 8
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Introduction to Programming in Python   | Python            |
 
+| Assignment   |
+| ------------ |
+| Lab 2        |
+| Lab 3        |
+| Lab 4        |
+| Lab 5        |
+| Lab 6        |
+| Lab 7        |
+| Lab 8        |
 
 ## CS 201: Fundamental Structures of Computer Science I
-Required Language: C++
 
-- Homework 1
-- Homework 2
-- Homework 3
-- Homework 4
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Fundamental Structures of CS I          | C++               |
 
+| Assignment   |
+| ------------ |
+| Homework 1   |
+| Homework 2   |
+| Homework 3   |
+| Homework 4   |
 
 ## CS 223: Digital Design
-Required Language: SystemVerilog
 
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Digital Design                          | SystemVerilog      |
 
-Note that there is no code provided for Lab 1 since it does not (or, at least, did not) include any programming.
+| Assignment   |
+| ------------ |
+| Lab 1        |
+| Lab 2        |
+| Lab 3        |
+| Lab 4        |
+| Lab 5        |
 
+*Note: No code provided for Lab 1.*
 
 ## CS 202: Fundamental Structures of Computer Science II
-Required Language: C++
 
-- Homework 1
-- Homework 2
-- Homework 3
-- Homework 4
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Fundamental Structures of CS II         | C++               |
 
+| Assignment   |
+| ------------ |
+| Homework 1   |
+| Homework 2   |
+| Homework 3   |
+| Homework 4   |
 
 ## CS 224: Computer Organization
-Required Languages: SystemVerilog & MARS Assembly
 
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 6
+| Title                                   | Required Languages         |
+| --------------------------------------- | -------------------------- |
+| Computer Organization                   | SystemVerilog & MARS Assembly |
 
-Note that Lab 5 is not shared since I did not do it. It is the hardest lab and I do not recommend to rely on it for the FZ criteria.
+| Assignment   |
+| ------------ |
+| Lab 1        |
+| Lab 2        |
+| Lab 3        |
+| Lab 4        |
+| Lab 6        |
 
+*Note: Lab 5 is not shared as it was not completed.*
 
 ## CS 315: Programming Languages
-Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
 
-- Project 1
-- Project 2
-- Homework 1
-- Homework 2
-- Homework 3
+| Title                                   | Required Languages         |
+| --------------------------------------- | -------------------------- |
+| Programming Languages                   | Python, Rust, Ruby, JavaScript, Dart, Lua, PHP |
 
-Note that the languages above may change from one semester to another.
+| Assignment     |
+| -------------- |
+| Project 1      |
+| Project 2      |
+| Homework 1     |
+| Homework 2     |
+| Homework 3     |
 
+*Note: Languages may change from one semester to another.*
 
 ## CS 319: Object-Oriented Software Engineering
-Required Language: Java<br/>
 
-- Take-home Assignment
-- [Course Project](https://github.com/Tuna-Onguner/InternHub)
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Object-Oriented Software Engineering    | Java              |
 
+| Assignment            |
+| --------------------- |
+| Take-home Assignment  |
+| [Course Project](https://github.com/Tuna-Onguner/InternHub) |
 
 ## CS 342: Operating Systems
-Required Language: C<br/>
 
-- Homework 1
-- Homework 2
-- Project 1
-- Project 3
-- Project 4
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Operating Systems                       | C                |
 
-Note that the project #2 is not shared beacuse I was failed to do it.
+| Assignment   |
+| ------------ |
+| Homework 1   |
+| Homework 2   |
+| Project 1    |
+| Project 3    |
+| Project 4    |
 
+*Note: Project #2 is not shared as it was not completed.*
 
 ## CS 353: Database Systems
-Required Language: SQL<br/>
 
-- Homework 1
-- Homework 2
-- Homework 3
-- Homework 4
-- [Course Project](https://github.com/Tuna-Onguner/PawfectMatch)
+| Title                                   | Required Language |
+| --------------------------------------- | ------------------ |
+| Database Systems                        | SQL              |
 
-Note that I did not do the last two homework (#5 and #6).
+| Assignment            |
+| --------------------- |
+| Homework 1            |
+| Homework 2            |
+| Homework 3            |
+| Homework 4            |
+| [Course Project](https://github.com/Tuna-Onguner/PawfectMatch) |
+
+*Note: Homework #5 and #6 were not completed.*
