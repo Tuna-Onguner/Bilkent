@@ -1,20 +1,16 @@
 # Bilkent University<br/>Department of Computer Engineering 
 
-<div style="border: 1px solid black; padding: 10px; margin: 10px;">
 
-## CS 102<br/>Algorithms and Programming II
-Required Language: Java
-
-- Homework 2
-- Homework 3
-- Lab 1
+| CS 102 Algorithms and Programming II |
+| ------------------------------------ |
+| - Homework 2                         |
+| - Homework 3                         |
+| - Lab 1                              |
 - Lab 2
 - Lab 3
 - Lab 4
 - Lab 5
 - Lab 6
-
-</div>
 
 
 ## CS 115<br/>Introduction to Programming in Python
