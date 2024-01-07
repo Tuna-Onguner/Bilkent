@@ -1,14 +1,9 @@
 # Bilkent University
-Department of Computer Engineering
+# Department of Computer Engineering
 
-Sadly, I have no longer access to my CS 101 works.
-
-## CS 102: Algorithms and Programming II
-
-| Title                                   | Required Language |
-| --------------------------------------- | ------------------ |
+| CS 102                                  | Required Language |
+| --------------------------------------- | ----------------- |
 | Algorithms and Programming II           | Java              |
-
 | Assignment   |
 | ------------ |
 | Homework 2   |
