@@ -28,13 +28,14 @@
 #include <stdbool.h>
 #include "vsfs.h"
 
-
 // Constants =====================================================================
 #define FAT_ENTRY_SIZE          4           // bytes
 #define DIR_ENTRY_SIZE          128         // bytes
 
 #define FAT_ENTRY_COUNT         16384       // entries
 #define DIR_ENTRY_COUNT         128         // entries
+
+#define SUPER_BLOCK_POS         0           // position of the super block in the directory entry
 
 #define FAT_ENTRY_PER_BLOCK     512         // entries
 #define DIR_ENTRY_PER_BLOCK     16          // entries
@@ -43,10 +44,9 @@
 
 #define MAX_FILE_NAMES          30          // characters
 #define MAX_OPEN_FILES          16          // files
-#define MAX_FILE_COUNT          128         // files
 
-#define MAX_DISK_SIZE           1<<23       // bytes
-#define MIN_DISK_SIZE           1<<18       // bytes
+#define MAX_DISK_SIZE           1 << 23     // bytes
+#define MIN_DISK_SIZE           1 << 18     // bytes
 // ===============================================================================
 
 
@@ -57,41 +57,38 @@ int open_files_count;   // Number of files currently open (max 16).
 
 
 // Structures ====================================================================
-struct {                // No special attributes are needed for the super block.
+struct {
     int self;           // Position of the super block in the Linux file.
     int fat_block;      // Position of the FAT in the Linux file.
     int dir_block;      // Position of the root directory in the Linux file.
     int data_block;     // Position of the data blocks in the Linux file.
     int file_count;     // Number of files in the root directory.
-} super_block; // The super block as a global variable
+    int max_file_count; // Maximum number of files in the root directory.
+} super_block;          // The super block as a global variable
 
-struct {            // Each entry in the FAT is 4 bytes.
-    int used: 1;    // 0 => Block is free; 1 => Block is used.
-    //int eof: 1;   // !!! DEPRECATED !!!
-    int next: 31;   // Block number of the next block in the file.
+struct {                // Each entry in the FAT is 4 bytes.
+    int used: 1;        // 0 => Block is free; 1 => Block is used.
+    int next: 31;       // Block number of the next block in the file.
 } fat[FAT_ENTRY_COUNT]; // The FAT as a global variable
 
 struct __attribute__((packed))  /* __attribute__((packed)): 'not to pad the structure' */  dir_entry {
     char name[MAX_FILE_NAMES];  // File name.
     int size;                   // File size in bytes.
     int first_block;            // Block number of the first data block.
-
-    // each dir_entry must be exactly 128 bytes
+    // padding: To make the size of the structure exactly 128 bytes.
     char padding[128 - sizeof(char) * MAX_FILE_NAMES - sizeof(int) * 2];
-    // padding is used to make each dir_entry exactly 128 bytes
-} root_dir[DIR_ENTRY_COUNT]; // The root directory as a global variable
+} root_dir[DIR_ENTRY_COUNT];    // The root directory as a global variable
 
 struct {
-    int file_index; // Index of the file in the root_dir array.
-    int mode;       // MODE_READ or MODE_APPEND -- so, 0 or 1.
-    //int offset;   // !!! DEPRECATED !!!
-} open_files[MAX_OPEN_FILES]; // The open files array as a global variable
+    int file_index;             // Index of the file in the root_dir array.
+    int mode;                   // MODE_READ or MODE_APPEND -- so, 0 or 1.
+} open_files[MAX_OPEN_FILES];   // The open files array as a global variable
 // ===============================================================================
 
 
 // Helper functions ==============================================================
-int read_block(void *block, int k) {
-    off_t offset = k * BLOCKSIZE;
+int read_block(void *block, const int k) {
+    const off_t offset = k * BLOCKSIZE;
     lseek(vs_fd, offset, SEEK_SET);
 
     if (read(vs_fd, block, BLOCKSIZE) != BLOCKSIZE) {
@@ -102,8 +99,8 @@ int read_block(void *block, int k) {
     return 0;
 }
 
-int write_block(void *block, int k) {
-    off_t offset = k * BLOCKSIZE;
+int write_block(void *block, const int k) {
+    const off_t offset = k * BLOCKSIZE;
     lseek(vs_fd, offset, SEEK_SET);
 
     if (write(vs_fd, block, BLOCKSIZE) != BLOCKSIZE) {
@@ -114,13 +111,13 @@ int write_block(void *block, int k) {
     return 0;
 }
 
-int min(int a, int b) { // Returns the minimum of two integers. Used in vsappend().
+int min(const int a, const int b) { // Returns the minimum of two integers. Used in vsappend().
     return a < b ? a : b;
 }
 // ===============================================================================
 
 
-int vsformat(char *vdiskname, int m) {
+int vsformat(char *vdiskname, const int m) {
     const int disk_size = 1 << m; // 2^m bytes
 
     // Step 1: Check if the disk size is valid
@@ -132,7 +129,7 @@ int vsformat(char *vdiskname, int m) {
 
     // Step 2: Create the Linux file
     char command[1000];
-    const int block_count = (int) (disk_size / BLOCKSIZE);
+    const int block_count = disk_size / BLOCKSIZE;
 
     sprintf(command, "dd if=/dev/zero of=%s bs=%d count=%d",
             vdiskname, BLOCKSIZE, block_count);
@@ -147,16 +144,16 @@ int vsformat(char *vdiskname, int m) {
     }
 
     // Step 4: Initialize the super block
-    super_block.self = 0;
+    super_block.self = SUPER_BLOCK_POS;
     super_block.fat_block = 1;
     super_block.dir_block = 33;
     super_block.data_block = 41;
     super_block.file_count = 0;
+    super_block.max_file_count = DIR_ENTRY_COUNT;
 
     // Step 5: Initialize the FAT
     for (int i = 0; i < FAT_ENTRY_COUNT; i++) {
         fat[i].used = false;
-        //fat[i].eof = false; // !!! DEPRECATED !!!
         fat[i].next = -1;
     }
 
@@ -171,7 +168,6 @@ int vsformat(char *vdiskname, int m) {
     for (int i = 0; i < MAX_OPEN_FILES; i++) {
         open_files[i].file_index = -1;
         open_files[i].mode = -1;
-        //open_files[i].offset = -1; // !!! DEPRECATED !!!
     }
 
     open_files_count = 0;
@@ -213,7 +209,7 @@ int vsmount(char *vdiskname) {
 
     // Step 2: Read the super block from the disk
     void *block = malloc(BLOCKSIZE);
-    read_block(block, 0);
+    read_block(block, SUPER_BLOCK_POS);
     memcpy(&super_block, block, sizeof(super_block));
 
     // Step 3: Read the FAT from the disk
@@ -232,7 +228,6 @@ int vsmount(char *vdiskname) {
     for (int i = 0; i < MAX_OPEN_FILES; i++) {
         open_files[i].file_index = -1;
         open_files[i].mode = -1;
-        //open_files[i].offset = -1; // !!! DEPRECATED !!!
     }
 
     // Step 6: Initialize the open_files_count
@@ -282,7 +277,7 @@ int vscreate(char *filename) {
     }
 
     // Step 2: Check if the root directory is full
-    if (super_block.file_count >= MAX_FILE_COUNT) {
+    if (super_block.file_count >= super_block.max_file_count) {
         printf("Root directory is full\n");
         return -1; // Root directory is full
     }
@@ -307,7 +302,7 @@ int vscreate(char *filename) {
     return 0;
 }
 
-int vsopen(char *filename, int mode) {
+int vsopen(char *filename, const int mode) {
     // Step 1: Check if the file exists
     int file_index = -1;
     for (int i = 0; i < DIR_ENTRY_COUNT; i++) {
@@ -347,7 +342,6 @@ int vsopen(char *filename, int mode) {
     // Step 4: Set the file_index, mode, and offset attributes of the file in the open_files array
     open_files[fd].file_index = file_index;
     open_files[fd].mode = mode;
-    //open_files[fd].offset = 0; // !!! DEPRECATED !!!
 
     // Step 5: Increment the open_files_count
     open_files_count++;
@@ -355,7 +349,7 @@ int vsopen(char *filename, int mode) {
     return fd + FILE_DESC_CONS; // Return the file descriptor using the magic number
 }
 
-int vssize(int fd) {
+int vssize(const int fd) {
     // Step 1: Check if the file descriptor is valid
     if (fd < FILE_DESC_CONS || fd >= FILE_DESC_CONS + MAX_OPEN_FILES) {
         printf("Invalid file descriptor\n");
@@ -372,7 +366,7 @@ int vssize(int fd) {
     return file->size;
 }
 
-int vsclose(int fd) {
+int vsclose(const int fd) {
     // Step 1: Check if the file descriptor is valid
     if (fd < FILE_DESC_CONS || fd >= FILE_DESC_CONS + MAX_OPEN_FILES) {
         printf("Invalid file descriptor\n");
@@ -388,7 +382,7 @@ int vsclose(int fd) {
     return 0;
 }
 
-int vsread(int fd, void *buf, int n) {
+int vsread(const int fd, void *buf, const int n) {
     // Step 1: Check if the file descriptor is valid
     if (fd < FILE_DESC_CONS || fd >= FILE_DESC_CONS + MAX_OPEN_FILES) {
         printf("Invalid file descriptor\n");
@@ -412,7 +406,8 @@ int vsread(int fd, void *buf, int n) {
 
     // Step 6: Read the data from the file
     void *block = malloc(BLOCKSIZE);
-    int current_block = file->first_block, bytes_read = 0;
+    int current_block = file->first_block;
+    int bytes_read = 0;
     while (bytes_read < bytes_to_read) {
         read_block(block, current_block + super_block.data_block);
         const int bytes_to_copy = min(bytes_to_read - bytes_read, BLOCKSIZE);
@@ -427,7 +422,7 @@ int vsread(int fd, void *buf, int n) {
     return bytes_read;
 }
 
-int vsappend(int fd, void *buf, int n) {
+int vsappend(const int fd, void *buf, const int n) {
     // Step 1: Check if the file descriptor is valid
     if (fd < FILE_DESC_CONS || fd >= FILE_DESC_CONS + MAX_OPEN_FILES) {
         printf("Invalid file descriptor\n");
@@ -455,12 +450,13 @@ int vsappend(int fd, void *buf, int n) {
         if (current_block == -1 || block_offset == 0) { // Check if the block is full
             int new_block = -1;
             // Find a free block
-            for (int i = 0; i < FAT_ENTRY_COUNT; i++) {
-                if (!fat[i].used) {
-                    new_block = i;
+            for (int index = 0; index < FAT_ENTRY_COUNT; index++) {
+                if (!fat[index].used) {
+                    new_block = index;
                     break;
                 }
             }
+
             // Check if there is a free block
             if (new_block == -1) {
                 free(block);
@@ -470,33 +466,27 @@ int vsappend(int fd, void *buf, int n) {
 
             // Initialize the new block
             fat[new_block].used = true;
-            //fat[new_block].eof = true; // !!! DEPRECATED !!!
 
             // Update the FAT
             if (current_block != -1) {
-                //fat[current_block].eof = false; // !!! DEPRECATED !!!
                 fat[current_block].next = new_block;
             } else {
                 file->first_block = new_block;
             }
 
-            // Update the current block
-            current_block = new_block;
+            current_block = new_block; // Update the current block
             block_offset = 0; // Reset the block offset
         }
 
         read_block(block, current_block + super_block.data_block);
-        const int bytes_to_copy = min(n - bytes_written, BLOCKSIZE - block_offset); // Adjust the bytes to copy
-        memcpy(block + block_offset, buf + bytes_written, bytes_to_copy); // Adjust the destination pointer
+        const int bytes_to_copy = min(n - bytes_written, BLOCKSIZE - block_offset);
+        memcpy(block + block_offset, buf + bytes_written, bytes_to_copy);
         write_block(block, current_block + super_block.data_block);
         bytes_written += bytes_to_copy;
         block_offset += bytes_to_copy; // Update the block offset
     }
 
     free(block); // Free the block
-
-    // Step 6: Update the current offset in the open_files array
-    //open_files[fd - FILE_DESC_CONS].offset += bytes_written; // !!! DEPRECATED !!!
 
     // Step 7: Update the file size in the root_dir array
     file->size += bytes_written;
@@ -508,9 +498,9 @@ int vsappend(int fd, void *buf, int n) {
 int vsdelete(char *filename) {
     // Step 1: Check if the file exists
     int file_index = -1;
-    for (int i = 0; i < DIR_ENTRY_COUNT; i++) {
-        if (strcmp(root_dir[i].name, filename) == 0) {
-            file_index = i;
+    for (int index = 0; index < DIR_ENTRY_COUNT; index++) {
+        if (strcmp(root_dir[index].name, filename) == 0) {
+            file_index = index;
             break;
         }
     }
@@ -529,11 +519,11 @@ int vsdelete(char *filename) {
     }
 
     // Step 3: Delete all the blocks of the file in the FAT
-    int current_block = root_dir[file_index].first_block, next_block;
+    int current_block = root_dir[file_index].first_block;
+    int next_block;
     while (current_block != -1) {
         next_block = fat[current_block].next;
         fat[current_block].used = false;
-        //fat[current_block].eof = false; // !!! DEPRECATED !!!
         fat[current_block].next = -1;
         current_block = next_block;
     }
