@@ -93,10 +93,11 @@ Required Language: C<br/>
 - Homework 1
 - Homework 2
 - Project 1
+- Project 2
 - Project 3
 - Project 4
 
-*Note that the project #2 is not shared beacuse I was failed to do it.*
+*Note that Project #2 is incomplete and does not function as intended.*
 
 
 ## CS 353: Database Systems
