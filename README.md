@@ -1,9 +1,7 @@
 # Bilkent University<br/>Department of Computer Engineering
 
----
-
-### <span style="color:#1E90FF">CS 102: Algorithms and Programming II</span>
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white&labelColor=blue&color=blue)
+### CS 102: Algorithms and Programming II
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 - **Homework**
   - Homework 2
@@ -18,8 +16,8 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 115: Introduction to Programming in Python</span>
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=blue&color=blue)
+### CS 115: Introduction to Programming in Python
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 - **Labs**
   - Lab 2
@@ -32,8 +30,8 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 201: Fundamental Structures of Computer Science I</span>
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=blue&color=blue)
+### CS 201: Fundamental Structures of Computer Science I
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 - **Homework**
   - Homework 1
@@ -43,8 +41,8 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 223: Digital Design</span>
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FFB71B?style=for-the-badge&logoColor=white&labelColor=blue&color=blue)
+### CS 223: Digital Design
+![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FFB71B?style=for-the-badge&logoColor=white)
 
 - **Labs**
   - Lab 1
@@ -57,8 +55,8 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 202: Fundamental Structures of Computer Science II</span>
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=blue&color=blue)
+### CS 202: Fundamental Structures of Computer Science II
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 - **Homework**
   - Homework 1
@@ -68,8 +66,8 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 224: Computer Organization</span>
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FFB71B?style=for-the-badge&logoColor=white&labelColor=blue&color=blue) ![MARS Assembly](https://img.shields.io/badge/MARS_Assembly-0078D6?style=for-the-badge&logo=assemblyscript&logoColor=white&labelColor=blue&color=blue)
+### CS 224: Computer Organization
+![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FFB71B?style=for-the-badge&logoColor=white) ![MARS Assembly](https://img.shields.io/badge/MARS_Assembly-0078D6?style=for-the-badge&logo=assemblyscript&logoColor=white)
 
 - **Labs**
   - Lab 1
@@ -78,12 +76,12 @@
   - Lab 4
   - Lab 6
 
-*Note: Lab 5 is not shared as it was not completed. It is known to be the hardest lab of the course and is not recommended to rely on it for FZ criteria.*
+*Note: Lab 5 is not shared as it was not completed. It is known to be the hardest lab and is not recommended to rely on it for the FZ criteria.*
 
 ---
 
-### <span style="color:#1E90FF">CS 315: Programming Languages</span>
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=blue&color=blue) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white&labelColor=blue&color=blue) ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white&labelColor=blue&color=blue) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=blue&color=blue) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white&labelColor=blue&color=blue) ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white&labelColor=blue&color=blue) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white&labelColor=blue&color=blue)
+### CS 315: Programming Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 - **Projects**
   - Project 1
@@ -93,12 +91,12 @@
   - Homework 2
   - Homework 3
 
-*Note: The languages above may change from one semester to another.*
+*Note: The languages may change from one semester to another.*
 
 ---
 
-### <span style="color:#1E90FF">CS 319: Object-Oriented Software Engineering</span>
-![Software Development](https://img.shields.io/badge/Software_Development-4CAF50?style=for-the-badge&logo=visualstudio&logoColor=white&labelColor=blue&color=blue) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white&labelColor=blue&color=blue)
+### CS 319: Object-Oriented Software Engineering
+![Software](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 - **Assignments**
   - Take-home Assignment
@@ -106,8 +104,9 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 342: Operating Systems</span>
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white&labelColor=blue&color=blue)
+### CS 342: Operating Systems
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 
 - **Homework**
   - Homework 1
@@ -122,8 +121,8 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 353: Database Systems</span>
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white&labelColor=blue&color=blue)
+### CS 353: Database Systems
+![Software](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)
 
 - **Homework**
   - Homework 1
@@ -136,12 +135,12 @@
 
 ---
 
-### <span style="color:#1E90FF">CS 453: Application Lifecycle Management</span>
-![Software Development](https://img.shields.io/badge/Software_Development-4CAF50?style=for-the-badge&logo=visualstudio&logoColor=white&labelColor=blue&color=blue)
+### CS 453: Application Lifecycle Management
+![Software](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 - **Homework**
   - Homework 1
   - Homework 2
 - [Course Project](https://github.com/Tuna-Onguner/Alkahest)
 
-*Note: Beware that the second homework received a lower grade due to exceeding the maximum word input limit for Gemini AI.*
+*Note: Be aware that the second homework was received a lower grade due to exceeding the maximum word input limit for Gemini AI.*
