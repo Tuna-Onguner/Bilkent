@@ -1,7 +1,6 @@
 # Bilkent University<br/>Department of Computer Engineering
 
-### CS 102: Algorithms and Programming II
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+### CS 102: Algorithms and Programming II ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 - **Homework**
   - Homework 2
