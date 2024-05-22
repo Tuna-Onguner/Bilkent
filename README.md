@@ -97,7 +97,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
 - Take-home Assignment
-- [Course Project](https://github.com/Tuna-Onguner/InternHub)
+- [Course Project/ InternHub](https://github.com/Tuna-Onguner/InternHub)
 
 ---
 
@@ -125,7 +125,7 @@
   - Homework 2
   - Homework 3
   - Homework 4
-- [Course Project](https://github.com/Tuna-Onguner/PawfectMatch)
+- [Course Project/ PawfectMatch](https://github.com/Tuna-Onguner/PawfectMatch)
 
 *Note: Homework 5 and 6 were not completed.*
 
@@ -138,6 +138,6 @@
 - **Homework**
   - Homework 1
   - Homework 2
-- [Course Project](https://github.com/Tuna-Onguner/Alkahest)
+- [Course Project/ Alkahest](https://github.com/Tuna-Onguner/Alkahest)
 
 *Note: Be aware that the second homework was received a lower grade due to exceeding the maximum word input limit for Gemini AI.*
