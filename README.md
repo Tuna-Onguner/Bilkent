@@ -1,6 +1,7 @@
 # Bilkent University<br/>Department of Computer Engineering
 
-### CS 102: Algorithms and Programming II ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+### CS 102: Algorithms and Programming II
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 - **Homework**
   - Homework 2
@@ -101,8 +102,7 @@
 ---
 
 ### CS 342: Operating Systems
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 - **Homework**
   - Homework 1
@@ -133,6 +133,7 @@
 
 ### CS 453: Application Lifecycle Management
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&labelColor=blue)
+![VSCode](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code)
 
 - **Homework**
   - Homework 1
