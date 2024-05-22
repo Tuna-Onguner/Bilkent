@@ -94,8 +94,7 @@
 ---
 
 ### CS 319: Object-Oriented Software Engineering
-![Software](https://img.shields.io/badge/Software-4CAF50?style=for-the-badge&logo=visualstudio&logoColor=white&labelColor=blue&color=blue)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
 - Take-home Assignment
 - [Course Project](https://github.com/Tuna-Onguner/InternHub)
@@ -104,7 +103,7 @@
 
 ### CS 342: Operating Systems
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge)
 
 - **Homework**
   - Homework 1
@@ -120,7 +119,7 @@
 ---
 
 ### CS 353: Database Systems
-![Software](https://img.shields.io/badge/Software-4CAF50?style=for-the-badge&logo=visualstudio&logoColor=white&labelColor=blue&color=blue) ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)
 
 - **Homework**
   - Homework 1
@@ -134,7 +133,6 @@
 ---
 
 ### CS 453: Application Lifecycle Management
-![Software](https://img.shields.io/badge/Software-4CAF50?style=for-the-badge&logo=visualstudio&logoColor=white&labelColor=blue&color=blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&labelColor=blue)
 
 - **Homework**
