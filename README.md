@@ -1,118 +1,146 @@
 # Bilkent University<br/>Department of Computer Engineering
 
+---
 
-## CS 102<br/>Algorithms and Programming II
-Required Language: Java
+### CS 102: Algorithms and Programming II
+**Required Language:** Java ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
-- Homework 2
-- Homework 3
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
-- Lab 6
+- **Homework**
+  - Homework 2
+  - Homework 3
+- **Labs**
+  - Lab 1
+  - Lab 2
+  - Lab 3
+  - Lab 4
+  - Lab 5
+  - Lab 6
 
+---
 
-## CS 115<br/>Introduction to Programming in Python
-Required Language: Python
+### CS 115: Introduction to Programming in Python
+**Required Language:** Python ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
-- Lab 6
-- Lab 7
-- Lab 8
+- **Labs**
+  - Lab 2
+  - Lab 3
+  - Lab 4
+  - Lab 5
+  - Lab 6
+  - Lab 7
+  - Lab 8
 
+---
 
-## CS 201<br/>Fundamental Structures of Computer Science I
-Required Language: C++
+### CS 201: Fundamental Structures of Computer Science I
+**Required Language:** C++ ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-- Homework 1
-- Homework 2
-- Homework 3
-- Homework 4
+- **Homework**
+  - Homework 1
+  - Homework 2
+  - Homework 3
+  - Homework 4
 
+---
 
-## CS 223<br/>Digital Design
-Required Language: SystemVerilog
+### CS 223: Digital Design
+**Required Language:** SystemVerilog ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FFB71B?style=for-the-badge&logoColor=white)
 
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
+- **Labs**
+  - Lab 1
+  - Lab 2
+  - Lab 3
+  - Lab 4
+  - Lab 5
 
-*Note that there is no code provided for the Lab 1 since it does not (or, at least, did not) include any programming.*
+*Note: Lab 1 does not include any programming.*
 
+---
 
-## CS 202<br/>Fundamental Structures of Computer Science II
-Required Language: C++
+### CS 202: Fundamental Structures of Computer Science II
+**Required Language:** C++ ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-- Homework 1
-- Homework 2
-- Homework 3
-- Homework 4
+- **Homework**
+  - Homework 1
+  - Homework 2
+  - Homework 3
+  - Homework 4
 
+---
 
-## CS 224<br/>Computer Organization
-Required Languages: SystemVerilog & MARS Assembly
+### CS 224: Computer Organization
+**Required Languages:** SystemVerilog ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FFB71B?style=for-the-badge&logoColor=white) & MARS Assembly ![MARS Assembly](https://img.shields.io/badge/MARS_Assembly-0078D6?style=for-the-badge&logo=assemblyscript&logoColor=white)
 
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 6
+- **Labs**
+  - Lab 1
+  - Lab 2
+  - Lab 3
+  - Lab 4
+  - Lab 6
 
-*Note that Lab 5 is not shared since I did not do it.<br/>Also, it is the hardest lab and I do not recommend to rely on it for the FZ criteria.*
+*Note: Lab 5 is not shared as it was not completed. It is known to be the hardest lab of the course and is not recommended to rely on for FZ criteria.*
 
+---
 
-## CS 315: Programming Languages
-Required Languages: Python, Rust, Ruby, JavaScript, Dart, Lua, PHP
+### CS 315: Programming Languages
+**Required Languages:** Python ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white), Rust ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white), Ruby ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white), JavaScript ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black), Dart ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white), Lua ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white), PHP ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-- Project 1
-- Project 2
-- Homework 1
-- Homework 2
-- Homework 3
+- **Projects**
+  - Project 1
+  - Project 2
+- **Homework**
+  - Homework 1
+  - Homework 2
+  - Homework 3
 
-*Note that the languages above may change from one semester to another.*
+*Note: The languages above may change from one semester to another.*
 
+---
 
-## CS 319: Object-Oriented Software Engineering
-Required Language: Java<br/>
+### CS 319: Object-Oriented Software Engineering
+**Required Language:** Java ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
-- Take-home Assignment
-- [Course Project](https://github.com/Tuna-Onguner/InternHub)
+- **Assignments**
+  - Take-home Assignment
+  - [Course Project](https://github.com/Tuna-Onguner/InternHub)
 
+---
 
-## CS 342: Operating Systems
-Required Language: C<br/>
+### CS 342: Operating Systems
+**Required Language:** C ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 
-- Homework 1
-- Homework 2
-- Project 1
-- Project 2
-- Project 3
-- Project 4
+- **Homework**
+  - Homework 1
+  - Homework 2
+- **Projects**
+  - Project 1
+  - Project 2
+  - Project 3
+  - Project 4
 
-*Note that Project #2 is incomplete and does not function as intended.*
+*Note: Project 2 is incomplete and does not function as intended.*
 
+---
 
-## CS 353: Database Systems
-Required Language: SQL<br/>
+### CS 353: Database Systems
+**Required Language:** SQL ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)
 
-- Homework 1
-- Homework 2
-- Homework 3
-- Homework 4
+- **Homework**
+  - Homework 1
+  - Homework 2
+  - Homework 3
+  - Homework 4
 - [Course Project](https://github.com/Tuna-Onguner/PawfectMatch)
 
-*Note that I did not do the last two homework (#5 and #6).*
+*Note: Homework 5 and 6 were not completed.*
 
+---
 
-## CS 453: Application Lifecycle Management
+### CS 453: Application Lifecycle Management
 
-- Homework 1
-- Course Project (Will be shared later)
+- **Homework**
+  - Homework 1
+  - Homework 2
+- [Course Project](https://github.com/Tuna-Onguner/Alkahest)
+
+*Note: Beware that the second homework received a lower grade due to exceeding the maximum word input limit for Gemini AI.*
