@@ -135,6 +135,10 @@
 - **Homework**
   - Homework 1
   - Homework 2
-- [Course Project: Alkahest](https://github.com/Tuna-Onguner/Alkahest)
+- **Course Project**
+  - Project Proposal
+  - Progress Report
+  - Final Report
+  - [Source Code](https://github.com/Tuna-Onguner/Alkahest)
 
 *Note: Be aware that the second homework was received a lower grade due to exceeding the maximum word input limit for Gemini AI.*
