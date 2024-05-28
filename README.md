@@ -95,7 +95,7 @@
 
 ---
 
-### CS 342: Operating Systems ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&style=flat-square) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=blac&style=flat-square)
+### CS 342: Operating Systems ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&style=flat-square) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&style=flat-square)
 
 - **Homework**
   - Homework 1
