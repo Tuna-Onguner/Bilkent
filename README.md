@@ -88,7 +88,7 @@
 
 ---
 
-### CS 319: Object-Oriented Software Engineering ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white&style=flat-square)
+### CS 319: Object-Oriented Software Engineering ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&style=flat-square) ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white&style=flat-square)
 
 - Take-home Assignment
 - [Course Project: InternHub](https://github.com/Tuna-Onguner/InternHub)
