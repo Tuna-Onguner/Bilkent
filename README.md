@@ -19,11 +19,11 @@ If any part of this repository is deemed to conflict with institutional policies
 | CS 115: Introduction to Programming in Python | Python                            | Labs 2–8                           |           |
 | CS 201: Fundamental Structures of Computer Science I | C++                        | Homework 1–4                       |           |
 | CS 202: Fundamental Structures of Computer Science II | C++                       | Homework 1–4                       |           |
-| CS 223: Digital Design                     | SystemVerilog                      | Labs 1–5                           | Lab 1 does not include any programming. |
-| CS 224: Computer Organization              | SystemVerilog, MARS Assembly       | Labs 1–4, 6                        | Lab 5 is incomplete. |
+| CS 223: Digital Design                     | SystemVerilog                      | Labs 1–5                           | Lab 1 does not include any programming/coding. |
+| CS 224: Computer Organization              | SystemVerilog, MARS Assembly       | Labs 1–4, 6                        | Project 5 has not been shared as I have not completed it myself. |
 | CS 315: Programming Languages              | Python, Rust, Ruby, JavaScript, Dart, Lua, PHP | Homework 1–3<br>Project 1, 2 |           |
 | CS 319: Object-Oriented Software Engineering | Python, Django                   | Take-home Assignment<br>Project: [InternHub](https://github.com/Tuna-Onguner/InternHub) |           |
-| CS 342: Operating Systems                  | C, Linux                           | Homework 1, 2<br>Project 1–4         | Project 2 is incomplete. |
+| CS 342: Operating Systems                  | C, Linux                           | Homework 1, 2<br>Project 1–4         | Project 2 is incomplete, and got a low grade. |
 | CS 353: Database Systems                   | Python, Django, SQL                | Homework 1–4<br>Project: [PawfectMatch](https://github.com/Tuna-Onguner/PawfectMatch) |           |
 | CS 413: Software Engineering Project Management | PDF                              | Project Charter, Project Management Plan |           |
-| CS 453: Application Lifecycle Management   | TypeScript, VSCode                 | Homework 1, 2<br>Course Project: Proposal, Progress Report, Final Report,<br>[Source Code](https://github.com/Tuna-Onguner/Alkahest) | Homework 2 has been received a lower grade due to exceeding the maximum word input limit for Gemini AI. |
+| CS 453: Application Lifecycle Management   | TypeScript, VSCode                 | Homework 1, 2<br>Course Project: Proposal, Progress Report, Final Report,<br>[Source Code](https://github.com/Tuna-Onguner/Alkahest) | Homework 2 has been received a low grade due to exceeding the maximum word input limit for Gemini AI. |
