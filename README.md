@@ -27,4 +27,5 @@ If any part of this repository is deemed to conflict with institutional policies
 | CS 353: Database Systems                   | Python, Django, SQL                | Homework 1–4<br>Project: [PawfectMatch](https://github.com/Tuna-Onguner/PawfectMatch) |           |
 | CS 413: Software Engineering Project Management | PDF                              | Project Charter, Project Management Plan |           |
 | CS 453: Application Lifecycle Management   | TypeScript, VSCode                 | Homework 1, 2<br>Course Project: Proposal, Progress Report, Final Report,<br>[Source Code](https://github.com/Tuna-Onguner/Alkahest) | Homework 2 has been received a low grade due to exceeding the maximum word input limit for Gemini AI. |
+| CS 491/2: Senior Design Project I/II       |                                    | Visit the webpage here: [variant-net](https://variant-net.seniorprojects.bilkent.edu.tr)     |              |
 | EEE 391: Basics of Signals and Systems     | MATLAB                             | MATLAB Assignments 1 & 2            |             |  
