@@ -55,6 +55,12 @@ build CMakeFiles/hw1.dir/main.cpp.o: CXX_COMPILER__hw1_unscanned_Debug /Users/tu
   OBJECT_DIR = CMakeFiles/hw1.dir
   OBJECT_FILE_DIR = CMakeFiles/hw1.dir
 
+build CMakeFiles/hw1.dir/SuffixTree.cpp.o: CXX_COMPILER__hw1_unscanned_Debug /Users/tuna/Develop/Bilkent/CS$ 481/hw1/SuffixTree.cpp || cmake_object_order_depends_target_hw1
+  DEP_FILE = CMakeFiles/hw1.dir/SuffixTree.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/hw1.dir
+  OBJECT_FILE_DIR = CMakeFiles/hw1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hw1
@@ -63,7 +69,7 @@ build CMakeFiles/hw1.dir/main.cpp.o: CXX_COMPILER__hw1_unscanned_Debug /Users/tu
 #############################################
 # Link the executable hw1
 
-build hw1: CXX_EXECUTABLE_LINKER__hw1_Debug CMakeFiles/hw1.dir/main.cpp.o
+build hw1: CXX_EXECUTABLE_LINKER__hw1_Debug CMakeFiles/hw1.dir/main.cpp.o CMakeFiles/hw1.dir/SuffixTree.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/hw1.dir
   POST_BUILD = :

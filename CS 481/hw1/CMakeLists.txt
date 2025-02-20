@@ -3,4 +3,6 @@ project(hw1)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(hw1 main.cpp)
+add_executable(hw1 main.cpp
+        SuffixTree.cpp
+        SuffixTree.h)
