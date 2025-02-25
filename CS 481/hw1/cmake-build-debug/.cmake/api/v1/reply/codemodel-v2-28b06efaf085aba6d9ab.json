@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.30"
+						"string" : "3.10"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hw1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hw1-Debug-3d1e355a1a3de069d677.json",
+					"jsonFile" : "target-hw1-Debug-8ab939775d2121ed5e14.json",
 					"name" : "hw1",
 					"projectIndex" : 0
 				}

@@ -148,6 +148,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=hw1
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
 
@@ -212,6 +227,24 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/Users/tuna/Develop/Bilkent/CS 481/hw1/cmake-build-debug
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/Users/tuna/Develop/Bilkent/CS 481/hw1
+
+//Value Computed by CMake
+SuffixTreeProject_BINARY_DIR:STATIC=/Users/tuna/Develop/Bilkent/CS 481/hw1/cmake-build-debug
+
+//Value Computed by CMake
+SuffixTreeProject_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SuffixTreeProject_SOURCE_DIR:STATIC=/Users/tuna/Develop/Bilkent/CS 481/hw1
 
 //Value Computed by CMake
 hw1_BINARY_DIR:STATIC=/Users/tuna/Develop/Bilkent/CS 481/hw1/cmake-build-debug
