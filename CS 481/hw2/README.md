@@ -6,7 +6,7 @@
 **Bilkent ID:** 22001788  
 
 ## Date
-**13.03.2025 (DD.MM.YYYY)**
+**19.03.2025 (DD.MM.YYYY)**
 
 ## Section & Instructor
 **Section:** 1  
@@ -74,6 +74,7 @@ The provided `Makefile` automates the execution of the Python script. Below is a
   - `COMPILE`: Placeholder target (since Python is interpreted, not compiled).
   - `RUN`: Executes `main.py` with optional arguments.
   - `CLEAN`: Removes cache files (`__pycache__`, `.pyc`, `.pyo`).
+  - `CLEANALL`: Removes cache files and output files, i.e. `.txt` files.
   - `HELP`: Displays usage instructions.
 
 ## Files in the Project

@@ -1,4 +1,4 @@
-def smith_waterman(pattern, text, match_score, mismatch_penalty, gap_penalty):
+def smith_waterman(pattern: str, text: str, match_score: int, mismatch_penalty: int, gap_penalty: int) -> tuple[str, str, int]:
     """
     Performs Smith-Waterman local alignment between a pattern and a text
     :param pattern: The first pattern to align
@@ -6,7 +6,7 @@ def smith_waterman(pattern, text, match_score, mismatch_penalty, gap_penalty):
     :param match_score: The score for a match
     :param mismatch_penalty: The penalty for a mismatch
     :param gap_penalty: The penalty for a gap
-    :return: A tuple containing the aligned pattern, aligned text, score, cigar, and mdz respectively
+    :return: A tuple containing the aligned pattern, aligned text, and the alignment score respectively
     """
     """
     REFERENCES:

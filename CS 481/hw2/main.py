@@ -13,12 +13,12 @@
 # Section: 1
 # Instructor: Can ALKAN
 #
-# Date: 13.03.2025 (DD.MM.YYYY)
+# Date: 19.03.2025 (DD.MM.YYYY)
 #
 # main.py:
 # Main file for Homework Assignment #2
 #
-# Interpreter: Python 3.10.2 or newer
+# Interpreter: Python 3.10.2 or later
 # Encoding: UTF-8
 #
 
@@ -190,10 +190,10 @@ def generate_cigar(aligned_pattern: str, aligned_text: str) -> str:
             op = "M"
         # Deletion in pattern
         elif pattern_char_at_index == "-":
-            op = "D"
+            op = "I"
         # Insertion in text
         elif text_char_at_index == "-":
-            op = "I"
+            op = "D"
         else:  # Mismatch
             continue
 
@@ -270,14 +270,10 @@ def process_alignment(alignment_mode: AlignmentMode, pattern: str, text: str, ma
         # Global alignment
         case AlignmentMode.GLOBAL:
             aligned_pattern, aligned_text, score = needleman_wunsch(pattern, text, match, mismatch, gap)
-            cigar = generate_cigar(aligned_text, aligned_pattern)
-            mdz = generate_md_z(aligned_pattern, aligned_text)
 
         # Local alignment
         case AlignmentMode.LOCAL:
             aligned_pattern, aligned_text, score = smith_waterman(pattern, text, match, mismatch, gap)
-            cigar = generate_cigar(aligned_pattern, aligned_text)
-            mdz = generate_md_z(aligned_text, aligned_pattern)
 
         # Default case
         # This should never happen due to the required flag in the argument parser and the enum class
@@ -285,6 +281,8 @@ def process_alignment(alignment_mode: AlignmentMode, pattern: str, text: str, ma
         case _:
             raise ValueError("Invalid alignment type")
 
+    mdz = generate_md_z(aligned_pattern, aligned_text)
+    cigar = generate_cigar(aligned_pattern, aligned_text)  # Generate the CIGAR string
     result = AlignmentResult(pattern, text, score, cigar, mdz)
     return result
 
@@ -329,8 +327,6 @@ def main() -> None:
     match args.alignment_mode:  # Switch case for alignment mode
         # Global alignment
         case AlignmentMode.GLOBAL:
-            # Find the pair with the biggest overlap and print it
-            # An overlap is defined as the longest number of consecutive matches in the alignment
             def max_overlap(c: str) -> int:
                 """
                 Finds the maximum overlap from the CIGAR string
@@ -341,12 +337,14 @@ def main() -> None:
                 # The syntax (\d+)M means find all the digits followed by an M
                 return max(map(int, matches)) if matches else 0
 
+            # Find the pair with the biggest overlap and print it
+            # An overlap is defined as the longest number of consecutive matches in the alignment
             max_overlap_pair = max(results, key=lambda p: max_overlap(p.cigar))  # Find the pair with the biggest overlap
             print("Longest overlap:\n" + str(max_overlap_pair))  # Print the pair with the biggest overlap
 
         # Local alignment
         case AlignmentMode.LOCAL:
-            # Find the pair with the highest score and print it
+            # First, find the highest score
             max_score_pair = max(results, key=lambda p: p.score)  # Find the pair with the highest score
             print("Highest local alignment score:\n" + str(max_score_pair))  # Print the pair with the highest score
 
