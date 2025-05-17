@@ -1,6 +1,0 @@
-PR #,Original PR Title, Generated PR Title
-5756,"Tricore, fix DEXTR, `Extract from Double Register` instruction",Relocate shift constant and variable
-6266,"Fix FDIVP freg,ST0 in x86",Fix: Swap dividend and divisor for FDIVP and FDIVRP instructions
-6302,Fix Mach-O import when no segment contains the header,Fix: Update MachoProgramBuilder to handle zero file offset segments
-1449,Tricore improvements,Update TriCore patterns and relocation handling
-6270,SPARC: Update missing relocation enum types and order by value,Add ARM and MIPS support to relocation types
